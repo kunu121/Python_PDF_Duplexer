@@ -1,2 +1,39 @@
-# Python_PDF_Duplexer
- Simplify manual duplex printing with this Python script that effortlessly splits a PDF file into two separate documents. Whether your printer supports duplex printing or not, this tool allows you to print front and back pages manually, making it an excellent solution for double-sided printing.
+# PDF Duplex Generator
+
+A Python script to split a PDF file into two separate files for manual duplex printing.
+
+## Overview
+
+This script simplifies manual duplex printing by generating two PDFs:
+- **Front pages:** The pages to print first.
+- **Back pages:** The pages to print after flipping the paper.
+
+By using these generated PDFs, you can easily achieve manual duplex printing on a printer that supports duplex printing.
+
+## Requirements
+
+- Python 3.x
+- PyPDF2 library
+
+## Installation
+
+1. **Clone the repository:**
+
+   git clone https://github.com/kunu121/Python_PDF_Duplexer.git
+
+2. **Install the required Python packages:**
+   pip install PyPDF2
+
+## Usage
+
+1. **Run the script:**
+   python pdf_duplex_generator.py
+2. **Enter the path of the input PDF file when prompted.**
+3. **Choose an option:**
+   - Long Side Flip
+   - Short Side Flip
+4. **The script will generate two PDF files:**
+   - front_pages.pdf for the front pages
+   - back_pages.pdf for the back pages
+5. **Printing:**
+   Print the front_pages.pdf file first, then flip the printed pages and print the back_pages.pdf file for manual duplex printing.
